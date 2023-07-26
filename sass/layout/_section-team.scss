@@ -1,0 +1,21 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $sec-accent-clr;
+}
+
+.team__container {
+  @extend .container;
+}
+
+.team__title {
+  @extend .section-title;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.team__list {
+  @extend .list;
+  display: flex;
+  justify-content: space-between;
+}

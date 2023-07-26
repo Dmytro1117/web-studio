@@ -1,0 +1,16 @@
+.logo {
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #000000;
+  &:focus {
+    outline: 1px solid $primary-accent-clr;
+  }
+}
+.logo__accent {
+  color: $primary-accent-clr;
+}

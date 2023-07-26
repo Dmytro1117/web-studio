@@ -1,0 +1,26 @@
+.filter {
+  @extend .list;
+  @extend .filter--projects;
+  display: flex;
+  justify-content: center;
+}
+
+.filter--projects {
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.filter__button--passive {
+  @extend .button;
+  @extend .button--passive;
+}
+.filter__button--active {
+  @extend .button;
+  @extend .button--active;
+}

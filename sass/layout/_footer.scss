@@ -1,0 +1,41 @@
+.footer {
+  padding: 60px 0;
+  background-color: $sec-bkg-clr;
+}
+.footer__container {
+  @extend .container;
+  display: flex;
+}
+.footer__section--contacts {
+  margin-right: 70px;
+  min-width: 231px;
+}
+.footer__section--social-nets {
+  margin-right: 93px;
+  padding-top: 12px;
+}
+.footer__section--subscribe-form {
+  padding-top: 12px;
+}
+.logo--footer {
+  @extend .logo;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $sec-text-clr;
+}
+.footer__subscribe-title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: $sec-fnt-size;
+  line-height: 1.14;
+  color: $sec-text-clr;
+}
+.social-net-list--footer {
+  @extend .social-net-list;
+  margin: 20px 0 0 0;
+}
+.social-net-list__link--footer {
+  color: $sec-text-clr;
+  background-color: rgba(255, 255, 255, 0.1);
+}

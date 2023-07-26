@@ -1,0 +1,44 @@
+.work-examples {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.work-examples__container {
+  @extend .container;
+}
+
+.work-examples__title {
+  @extend .section-title;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.work-examples__work-list {
+  @extend .list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-examples__item {
+  position: relative;
+}
+
+.work-examples__img {
+  display: block;
+}
+
+.work-examples__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $sec-text-clr;
+}

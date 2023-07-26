@@ -1,0 +1,21 @@
+.contacts {
+  @extend .list;
+}
+.contacts__item {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__link {
+  @extend .link;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  @include hov-foc-effect-color;
+}
+
+.contacts__link--gmaps {
+  @extend .contacts__link;
+  color: $sec-text-clr;
+}

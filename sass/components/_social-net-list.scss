@@ -1,0 +1,20 @@
+.social-net-list {
+  @extend .list;
+  display: flex;
+  width: 206px;
+  margin: 16px auto 0;
+  justify-content: space-between;
+}
+.social-net-list__link {
+  @extend .link;
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  color: $icon-main-clr;
+  border-radius: 50%;
+  @include hov-foc-effect-txt-bg($sec-text-clr, $primary-accent-clr);
+}
+.social-net-list__icon {
+  fill: currentColor;
+}
