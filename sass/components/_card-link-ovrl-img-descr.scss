@@ -1,0 +1,66 @@
+.card-link {
+  @extend .link;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transition: box-shadow 250ms $transform-funct;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
+  }
+  &:hover .card-link__overlay,
+  &:focus .card-link__overlay {
+    transform: translateY(0);
+  }
+}
+
+.card-link__wrap-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-link__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  transition: transform 250ms $transform-funct;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  color: $sec-text-clr;
+}
+
+.card-link__title-box {
+  padding: 20px 24px;
+  flex-grow: 1;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.card-link__title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  @media screen and (min-width: 1200px) {
+    white-space: nowrap;
+  }
+  color: $title-text-clr;
+}
+
+.card-link__description {
+  margin: 0;
+  font-size: $primary-fnt-size;
+  line-height: 1.88;
+}

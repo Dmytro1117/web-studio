@@ -1,0 +1,31 @@
+.team {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  background-color: $sec-accent-clr;
+}
+
+.team__container {
+  @extend .container;
+}
+
+.team__title {
+  text-align: center;
+  color: $title-text-clr;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}

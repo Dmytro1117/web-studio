@@ -1,0 +1,68 @@
+.footer {
+  padding: 60px 0;
+  background-color: $sec-bkg-clr;
+}
+
+.footer__container {
+  @extend .container;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer__section--contacts {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+    margin-right: 165px;
+    padding-left: 61px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    min-width: 231px;
+  }
+}
+
+.footer__section--social-nets {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+    vertical-align: top;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 12px;
+  }
+}
+
+.footer__social-net-list {
+  margin: 20px auto 0;
+}
+
+.footer__section--subscribe-form {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
+}
+
+.footer__subscribe-title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: $sec-fnt-size;
+  line-height: 1.14;
+  color: $sec-text-clr;
+}

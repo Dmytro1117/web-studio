@@ -1,0 +1,43 @@
+.logo {
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000000;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  &:focus {
+    outline: 1px solid $primary-accent-clr;
+  }
+}
+
+.logo__accent {
+  color: $primary-accent-clr;
+}
+
+.logo--site-nav {
+  @extend .logo;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 92px;
+  }
+}
+
+.logo--footer {
+  @extend .logo;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $sec-text-clr;
+}

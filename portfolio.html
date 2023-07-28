@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <a class="logo--site-nav" href="./index.html">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+
+        <div class="header__menu">
+          <nav class="header__site-nav">
+            <ul class="header__site-nav-list">
+              <li class="header__site-nav-item">
+                <a class="header__site-nav-link" href="./index.html">Студія</a>
+              </li>
+
+              <li class="header__site-nav-item">
+                <a
+                  class="header__site-nav-link header__site-nav-link--current"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+
+              <li class="header__site-nav-item">
+                <a class="header__site-nav-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header__contact-list">
+            <li class="header__contact-list-item">
+              <a class="header__contact-list-link" href="mailto:info@devstudio.com">
+                <svg class="header__contact-list-icon header__contact-list-icon--envelope">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+
+            <li class="header__contact-list-item">
+              <a class="header__contact-list-link" href="tel:+380961111111">
+                <svg class="header__contact-list-icon header__contact-list-icon--phone">
+                  <use href="./images/icons.svg#icon-mobile"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="mobile-menu__btn">
+          <svg width="40" height="40" aria-label="Кнопка мобільного меню">
+            <use class="mobile-menu__icon--open" href="./images/icons.svg#menu-icon-open"></use>
+            <use class="mobile-menu__icon--close" href="./images/icons.svg#menu-icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <nav class="mobile-menu__site-nav">
+          <ul class="mobile-menu__site-nav-list">
+            <li class="mobile-menu__site-nav-item">
+              <a class="mobile-menu__site-nav-link" href="./index.html">Студія</a>
+            </li>
+
+            <li class="mobile-menu__site-nav-item">
+              <a
+                class="mobile-menu__site-nav-link mobile-menu__site-nav-link--current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+
+            <li class="mobile-menu__site-nav-item">
+              <a class="mobile-menu__site-nav-link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-menu__contact-list">
+          <li class="mobile-menu__contact-list-item mobile-menu__contact-list-item--phone">
+            <a class="mobile-menu__contact-list-link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__contact-list-item mobile-menu__contact-list-item--email">
+            <a class="mobile-menu__contact-list-link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__soc-net-list">
+          <li class="mobile-menu__soc-net-item">
+            <a class="mobile-menu__soc-net-link" target="_blank" href="https://www.instagram.com/"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__soc-net-item">
+            <a class="mobile-menu__soc-net-link" target="_blank" href="https://www.twitter.com/"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__soc-net-item">
+            <a class="mobile-menu__soc-net-link" target="_blank" href="https://www.facebook.com/"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__soc-net-item">
+            <a class="mobile-menu__soc-net-link" target="_blank" href="https://www.linkedin.com/"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="projects">
+        <div class="projects__container">
+          <ul class="filter filter--projects">
+            <li class="filter__item">
+              <button class="filter__button--active" type="button">Усі</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button--passive" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button--passive" type="button">Додатки</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button--passive" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button--passive" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- This h1 will be invisible -->
+          <h1 class="projects__title">Наші роботи</h1>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/pfl1-desk-370.jpg 370w,
+                        ./images/projects/pfl1-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl1-tab-354.jpg 354w,
+                        ./images/projects/pfl1-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl1-mob-450.jpg 450w,
+                        ./images/projects/pfl1-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      src="./images/projects/pfl1-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Технокряк"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Технокряк</h3>
+                  <p class="card-link__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/pfl2-desk-370.jpg 370w,
+                        ./images/projects/pfl2-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl2-tab-354.jpg 354w,
+                        ./images/projects/pfl2-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl2-mob-450.jpg 450w,
+                        ./images/projects/pfl2-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      src="./images/projects/pfl2-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="card-link__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/pfl3-desk-370.jpg 370w,
+                        ./images/projects/pfl3-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl3-tab-354.jpg 354w,
+                        ./images/projects/pfl3-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl3-mob-450.jpg 450w,
+                        ./images/projects/pfl3-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      src="./images/projects/pfl3-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Ресторан Seafood"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Ресторан Seafood</h3>
+                  <p class="card-link__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/pfl4-desk-370.jpg 370w,
+                        ./images/projects/pfl4-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl4-tab-354.jpg 354w,
+                        ./images/projects/pfl4-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl4-mob-450.jpg 450w,
+                        ./images/projects/pfl4-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      src="./images/projects/pfl4-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Проєкт Prime"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Проєкт Prime</h3>
+                  <p class="card-link__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/pfl5-desk-370.jpg 370w,
+                        ./images/projects/pfl5-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl5-tab-354.jpg 354w,
+                        ./images/projects/pfl5-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl5-mob-450.jpg 450w,
+                        ./images/projects/pfl5-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      src="./images/projects/pfl5-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Проєкт Boxes"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Проєкт Boxes</h3>
+                  <p class="card-link__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/pfl6-desk-370.jpg 370w,
+                        ./images/projects/pfl6-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl6-tab-354.jpg 354w,
+                        ./images/projects/pfl6-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl6-mob-450.jpg 450w,
+                        ./images/projects/pfl6-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      src="./images/projects/pfl6-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Inspiration has no Borders"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Inspiration has no Borders</h3>
+                  <p class="card-link__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/pfl7-desk-370.jpg 370w,
+                        ./images/projects/pfl7-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl7-tab-354.jpg 354w,
+                        ./images/projects/pfl7-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl7-mob-450.jpg 450w,
+                        ./images/projects/pfl7-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      src="./images/projects/pfl7-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Видання Limited Edition"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Видання Limited Edition</h3>
+                  <p class="card-link__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/pfl8-desk-370.jpg 370w,
+                        ./images/projects/pfl8-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl8-tab-354.jpg 354w,
+                        ./images/projects/pfl8-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl8-mob-450.jpg 450w,
+                        ./images/projects/pfl8-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      src="./images/projects/pfl8-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Проєкт LAB"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Проєкт LAB</h3>
+                  <p class="card-link__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a class="card-link" href="">
+                <div class="card-link__wrap-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/pfl9-desk-370.jpg 370w,
+                        ./images/projects/pfl9-desk-740.jpg 540w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl9-tab-354.jpg 354w,
+                        ./images/projects/pfl9-tab-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/pfl9-mob-450.jpg 450w,
+                        ./images/projects/pfl9-mob-900.jpg 900w
+                      "
+                      media="(min-width: 480px)"
+                      sizes="450px"
+                    />
+                    <img
+                      src="./images/projects/pfl9-mob-900.jpg"
+                      alt="Приклад роботи студії під назвою Growing Business"
+                    />
+                  </picture>
+                  <p class="card-link__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="card-link__title-box">
+                  <h3 class="card-link__title">Growing Business</h3>
+                  <p class="card-link__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__section footer__section--contacts">
+          <a class="logo--footer" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio
+          </a>
+          <address>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a
+                  class="contacts__link contacts__link--gmaps"
+                  href="https://goo.gl/maps/LqEMvfZFrGtLSNi77"
+                  target="_blank"
+                  >м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__section footer__section--social-nets">
+          <h3 class="footer__subscribe-title">Приєднуйтесь</h3>
+          <ul class="social-net-list social-net-list--inline footer__social-net-list">
+            <li class="item">
+              <a
+                class="social-net-list__link social-net-list__link--dark"
+                href="https://www.instagram.com/"
+              >
+                <svg class="social-net-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="social-net-list__link social-net-list__link--dark"
+                href="https://www.twitter.com/"
+              >
+                <svg class="social-net-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="social-net-list__link social-net-list__link--dark"
+                href="https://www.facebook.com/"
+              >
+                <svg class="social-net-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="social-net-list__link social-net-list__link--dark"
+                href="https://www.linkedin.com/"
+              >
+                <svg class="social-net-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section footer__section--subscribe-form">
+          <form class="subscribe-form">
+            <label class="subscribe-form__label">
+              <h4 class="subscribe-form__title">Підпишіться на розсилку</h4>
+              <div class="subscribe-form__wrapper">
+                <input
+                  class="subscribe-form__input"
+                  type="email"
+                  placeholder="E-mail"
+                  name="email"
+                />
+                <button class="button button--active button--subscribe-form" type="submit">
+                  Підписатися
+                  <svg class="button__icon button__icon--end" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
