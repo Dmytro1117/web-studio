@@ -1,0 +1,79 @@
+<!-- Modal window -->
+<div class="backdrop backdrop__is-hidden" data-modal>
+  <div class="user-data-modal-window">
+    <button class="user-data-modal-window__btn-close" type="button" data-modal-close>
+      <svg class="user-data-modal-window__icon-close" width="30" height="30">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="user-data__form" name="form-user">
+      <h2 class="user-data-modal-window__title">Залиште свої дані, ми вам передзвонимо</h2>
+
+      <label class="user-data-modal-window__field">
+        <input class="user-data-modal-window__input" type="text" name="user-name" />
+        <svg class="user-data-modal-window__icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-form-person"></use>
+        </svg>
+        <span class="user-data-modal-window__input-title">Ім'я</span>
+      </label>
+
+      <label class="user-data-modal-window__field">
+        <input class="user-data-modal-window__input" type="tel" name="user-phone" />
+        <svg class="user-data-modal-window__icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-form-phone"></use>
+        </svg>
+        <span class="user-data-modal-window__input-title">Телефон</span>
+      </label>
+
+      <label class="user-data-modal-window__field">
+        <input class="user-data-modal-window__input" type="text" name="user-email" />
+        <svg class="user-data-modal-window__icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-form-mail"></use>
+        </svg>
+        <span class="user-data-modal-window__input-title">Пошта</span>
+      </label>
+
+      <label class="user-data-modal-window__field">
+        <textarea
+          class="user-data-modal-window__comment"
+          name="comment"
+          id="modal-comment"
+          rows="10"
+          placeholder="Введіть текст"
+        ></textarea>
+        <span class="user-data-modal-window__input-title">Коментар</span>
+      </label>
+
+      <div class="user-data-modal-window__policy-field">
+        <label class="user-data-modal-window__agreement-label">
+          <input
+            class="user-data-modal-window__standart-checkbox"
+            type="checkbox"
+            name="policy"
+            value="agree"
+          />
+          Погоджуюся з розсилкою та приймаю
+          <a class="user-data-modal-window__license-agreement-link" href="">Умови договору</a>
+          <svg
+            class="user-data-modal-window__icon-checkbox user-data-modal-window__icon-checkbox--not-checked"
+            width="16"
+            height="15"
+          >
+            <use href="./images/icons.svg#icon-checkbox"></use>
+          </svg>
+          <svg
+            class="user-data-modal-window__icon-checkbox user-data-modal-window__icon-checkbox--checked"
+            width="16"
+            height="15"
+          >
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+        </label>
+      </div>
+
+      <button class="button button--active button--user-data-modal-window" type="submit">
+        Відправити
+      </button>
+    </form>
+  </div>
+</div>
