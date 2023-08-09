@@ -1,5 +1,7 @@
 # Web Studio
 
+![HTML, SCSS, JS](./assets/poster.jpg)
+
 ## Stack of technologies:
 
 ![HTML%](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
