@@ -1,3 +1,8 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../base/container' as *;
+@use '../base/base' as *;
+@use '../utils/invisible' as *;
 .subscribe-form__title {
   margin-top: 0;
   margin-bottom: 20px;

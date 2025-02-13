@@ -1,23 +1,18 @@
 {
   "name": "web-studio",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://dmytro1117.github.io/web-studio/",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "parcel build src/*.html --public-url /web-studio/"
+    "start": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.9.3",
-    "parcel": "^2.9.3",
-    "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "sass": "^1.84.0",
+    "vite": "^4.4.5"
   },
   "dependencies": {
-    "modern-normalize": "^2.0.0"
-  },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+    "modern-normalize": "^1.1.0"
+  }
 }

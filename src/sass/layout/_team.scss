@@ -1,4 +1,8 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../base/container' as *;
 .team {
+  background-color: $sec-accent-clr;
   @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -7,8 +11,6 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
-  background-color: $sec-accent-clr;
 }
 
 .team__container {

@@ -1,3 +1,7 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../base/container' as *;
+@use '../base/base' as *;
 .clients {
   @media screen and (max-width: 1199px) {
     padding: 60px 0;
@@ -39,13 +43,15 @@
 
 .clients__link {
   @extend .link;
-
+  @include hov-foc-effect-border;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 92px;
   margin: 15px;
-
+  color: $icon-main-clr;
+  border: 1px solid $icon-main-clr;
+  border-radius: 4px;
   @media screen and (max-width: 479px) {
     width: calc((100vw / 2) - 30px);
   }
@@ -58,12 +64,6 @@
   @media screen and (min-width: 1200px) {
     width: 170px;
   }
-
-  color: $icon-main-clr;
-  border: 1px solid $icon-main-clr;
-  border-radius: 4px;
-
-  @include hov-foc-effect-border;
 }
 
 .clients__icon {

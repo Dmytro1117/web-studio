@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 .container {
   width: 100%;
   padding: 0 15px;

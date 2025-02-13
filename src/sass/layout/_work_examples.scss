@@ -1,10 +1,13 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../base/container' as *;
+@use '../base/base' as *;
 .work-examples {
+  padding-top: 47px;
+  padding-bottom: 94px;
   @media screen and (max-width: 1199px) {
     display: none;
   }
-
-  padding-top: 47px;
-  padding-bottom: 94px;
 }
 
 .work-examples__container {

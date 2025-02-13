@@ -1,3 +1,6 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
 .page {
   font-family: Roboto, sans-serif;
   font-size: $sec-fnt-size;
